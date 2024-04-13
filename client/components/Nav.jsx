@@ -1,15 +1,15 @@
-import { useAuth0 } from "@auth0/auth0-react";
-import { Link } from "react-router-dom";
+import { useAuth0 } from '@auth0/auth0-react'
+import { Link } from 'react-router-dom'
 
 export default function Nav() {
-  const { loginWithRedirect, logout, isAuthenticated } = useAuth0();
+  const { loginWithRedirect, logout, isAuthenticated } = useAuth0()
 
   function handleLogin() {
-    loginWithRedirect({ redirectUri: `${window.location.origin}` });
+    loginWithRedirect({ redirectUri: `${window.location.origin}` })
   }
 
   function handleLogout() {
-    logout({ returnTo: `${window.location.origin}` });
+    logout({ returnTo: `${window.location.origin}` })
   }
 
   return (
@@ -52,5 +52,5 @@ export default function Nav() {
         )}
       </nav>
     </>
-  );
+  )
 }
