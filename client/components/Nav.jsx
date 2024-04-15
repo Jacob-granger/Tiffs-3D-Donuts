@@ -15,7 +15,7 @@ export default function Nav() {
   return (
     <>
       <nav className="fixed top-0 mx-auto w-full h-13 flex justify-between items-center bg-[#f5f5f5] z-10">
-        <div className="flex items-center">
+        <div className="flex items-center ml-8">
           <Link to="/">
             <img
               className="w-14 m-4 animate-spin"
@@ -24,13 +24,15 @@ export default function Nav() {
             />
           </Link>
           <Link to="/">
-            <button className="ml-1 text-2xl hover:underline nav">Home</button>
+            <button className="ml-1 text-2xl hover:underline nav text-black">
+              Tiffs Donuts
+            </button>
           </Link>
         </div>
 
         {!isAuthenticated ? (
           <button
-            className="mt-3 px-3 py-2 bg-[#CC3968]  hover:bg-red-400 rounded-full text-white mr-8 text-2xl nav"
+            className="mt-3 px-3 py-2 bg-[#CC3968]  hover:bg-red-400 rounded-full text-white text-2xl mr-20"
             onClick={handleLogin}
           >
             Login
@@ -43,7 +45,7 @@ export default function Nav() {
               </button>
             </Link>
             <button
-              className=" px-3 py-2 bg-[#b6b6b6]  hover:bg-sky-300 rounded-full text-white mr-20 text-2xl nav"
+              className="mt-3 px-3 py-2 bg-[#CC3968]  hover:bg-red-400 rounded-full text-white mr-20 text-2xl nav"
               onClick={handleLogout}
             >
               Logout

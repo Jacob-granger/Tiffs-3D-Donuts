@@ -135,13 +135,13 @@ function Interfaces(props) {
 
           <div>
             <button
-              className="mt-5 p-3 px-4 text-lg bg-[#f6fb4a] hover:bg-[#f8de4f] rounded-full"
+              className="mt-5 p-3 px-4 text-lg bg-[#f6fb4a] hover:bg-[#f8de4f] rounded-full text-black"
               onClick={addGold}
             >
               Coat with gold
             </button>
             <button
-              className="mt-3 p-3 ml-3 px-5 text-lg bg-[#fffb0b5b] hover:bg-[#f3f0503b] rounded-full"
+              className="mt-3 p-3 ml-3 px-5 text-lg bg-[#fffb0b5b] hover:bg-[#f3f0503b] rounded-full text-black"
               onClick={cancelGold}
             >
               Remove gold
@@ -181,7 +181,7 @@ function Interfaces(props) {
                 withGold={withGold}
               />
             ) : (
-              <div className="mt-20">
+              <div className="mt-20 text-black">
                 Love your donut?{' '}
                 <button
                   onClick={handleLogin}

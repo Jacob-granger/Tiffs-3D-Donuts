@@ -9,15 +9,15 @@
 
 body {
   margin: 0;
-  font-family: 'Itim', cursive;
-  color: rgb(26, 26, 26);
+  font-family: 'Helvetica';
+  color: #cc3968;
   background: #f5f5f5;
   background-repeat: no-repeat;
   background-attachment: fixed;
   z-index: 1;
 }
 .nav {
-  font-family: 'Itim', cursive;
+  font-family: 'Helvetica';
 }
 img {
   width: 200px;
